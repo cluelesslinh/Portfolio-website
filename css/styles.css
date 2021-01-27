@@ -68,8 +68,10 @@ a:active {
 }
 
 .profile {
+  clear:both;
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .button, button {
@@ -108,11 +110,14 @@ button:focus,
 
 .page-header__logo {
   float: left;
+  margin-left: 25px;
   width: 300px;
 }
 
 .page-header__item {
   flex: 0 1 200px;
+  float: right;
+  margin-right: 25px;
 }
 
 .page-header_item:last-child {
@@ -166,47 +171,80 @@ button:focus,
  .grid__item:last-child {
 }
 
+.dragon-sunset {
+  width: 500px;
+  height: 500px;
+}
+
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  animation: 15s color-change infinite alternate linear;
 }
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: #f3d952;
   }
   50% {
-    fill: #fcffad;
+    fill: #eb6b34;
   }
   100% {
-    fill: #f76414;
+    fill: #f3ad52;
   }
-}
+ }
 
-@keyframes cloud-move {
+.top_cloud {
+  
+  animation: 15s color-change infinite alternate linear,
+  15s cloud-move infinite alternate linear; 
+}
+   
+  @keyframes color-change {
+  0% {
+    fill: #f3d952;
+  }
+  50% {
+    fill: #eb6b34;
+  }
+  100% {
+    fill: #f3ad52;
+  }
+ } 
+   
+  @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
   to {
-    transform: translate(200px, 50px);
+    transform: translate(400px, 50px);
   }
-}
+ }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.bottom_cloud {
+  
+  animation: 15s color-change infinite alternate linear,
+  15s cloud-move-reverse infinite alternate linear; 
 }
-
-@keyframes cloud-move-reverse {
+  
+  @keyframes color-change {
+  0% {
+    fill: #f3d952;
+  }
+  50% {
+    fill: #eb6b34;
+  }
+  100% {
+    fill: #f3ad52;
+  }
+ }
+  
+  @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
   to {
     transform: translate(100px, 48px);
   }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+ }
 
 @media all and (max-width: 500px) {
   .grid {
