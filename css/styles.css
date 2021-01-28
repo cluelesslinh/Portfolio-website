@@ -1,6 +1,5 @@
-$primary-color: #DBDADA;
-
 :root {
+  --primary-color: #DBDADA;
   --link-color: #357b70;
   --visited-link: #05676e;
   --selected-link: #05676e;
@@ -12,7 +11,7 @@ $primary-color: #DBDADA;
 
 body {
 
-background-color: #DBDADA;
+background-color: var(--primary-color);
 
   font-family: 'Crimson-Text', sans-serif;
   font-weight: 400;
@@ -22,22 +21,18 @@ background-color: #DBDADA;
   /* Sets the line-height to 1.6 */
 }
 
-%h-shared {
-  font-weight: 700;
-}
-
 h1 {
-  @extend %h-shared;
+  font-weight: 700;
   font-size: 30px;
 }
 
 h2 {
-  @extend %h-shared;
+  font-weight: 700;
   font-size: 24px;
 }
 
 h3 {
-  @extend %h-shared;
+  font-weight: 700;
   font-size: 18px;
 }
 
