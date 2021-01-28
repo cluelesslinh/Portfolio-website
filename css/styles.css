@@ -60,6 +60,13 @@ a:active {
   color: var(--selected-link);
 }
 
+.portfolio-logo {
+  display: flex;
+  justify-content: center;
+  flex: auto;
+  padding: 50px 0px 0px 0px;
+}
+
 .profile__portrait {
   float: left;
   width: 250px;
@@ -102,27 +109,24 @@ button:focus,
   opacity: 0.8;
 }
 
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
+nav ul {
+  padding: 0;
 }
 
-.page-header__logo {
-  float: left;
-  margin-left: 25px;
-  width: 300px;
+.page-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px 0 0;
 }
 
 .page-header__item {
   flex: 0 1 200px;
-  float: right;
-  margin-right: 25px;
+  text-align: center;
 }
 
-.page-header_item:last-child {
+.page-header__item:last-child {
   flex-grow: 1;
-  text-align: right;
 }
 
 .navigation-list {
@@ -131,7 +135,7 @@ button:focus,
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin: 20px;
 }
 
 .page-footer {
@@ -169,6 +173,19 @@ button:focus,
    margin: 0;
  }
  .grid__item:last-child {
+}
+
+.about-me {
+  padding: 0;
+  text-align: center;
+}
+
+.enjoy-list {
+  padding: 0;
+}
+
+.enjoy-list li {
+  list-style-type: none;
 }
 
 .dragon-sunset {
@@ -245,6 +262,28 @@ button:focus,
     transform: translate(100px, 48px);
   }
  }
+
+ .experience-table {
+  margin: auto;
+ }
+
+ .contact-me {
+   padding: 0;
+   display: block;
+   text-align: center;
+ }
+
+ #contact-form {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+label, input {
+  padding: 0;
+  margin-top: 15px;
+}
 
 @media all and (max-width: 500px) {
   .grid {
