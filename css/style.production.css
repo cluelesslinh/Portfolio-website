@@ -242,26 +242,14 @@ nav ul {
  }
 
 .top_cloud {
-  
+
   -webkit-animation: 15s color-change infinite alternate linear,
   15s cloud-move infinite alternate linear;
-  
+
           animation: 15s color-change infinite alternate linear,
-  15s cloud-move infinite alternate linear; 
+  15s cloud-move infinite alternate linear;
 }
-   
-  @keyframes color-change {
-  0% {
-    fill: #f3d952;
-  }
-  50% {
-    fill: #eb6b34;
-  }
-  100% {
-    fill: #f3ad52;
-  }
- } 
-   
+
   @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
@@ -271,8 +259,8 @@ nav ul {
     -webkit-transform: translate(400px, 50px);
             transform: translate(400px, 50px);
   }
- } 
-   
+ }
+
   @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
@@ -285,26 +273,14 @@ nav ul {
  }
 
 .bottom_cloud {
-  
+
   -webkit-animation: 15s color-change infinite alternate linear,
   15s cloud-move-reverse infinite alternate linear;
-  
+
           animation: 15s color-change infinite alternate linear,
-  15s cloud-move-reverse infinite alternate linear; 
+  15s cloud-move-reverse infinite alternate linear;
 }
-  
-  @keyframes color-change {
-  0% {
-    fill: #f3d952;
-  }
-  50% {
-    fill: #eb6b34;
-  }
-  100% {
-    fill: #f3ad52;
-  }
- }
-  
+
   @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
@@ -315,7 +291,7 @@ nav ul {
             transform: translate(100px, 48px);
   }
  }
-  
+
   @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
