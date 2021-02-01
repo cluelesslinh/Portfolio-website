@@ -6,75 +6,69 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-
-<title>Contact Linh Pham</title>
+    <title>Contact</title>
 </head>
 
 <body>
 
-<header class="page-header__item">
+  <header class="page-header">
 
-   <h1 class="main-navigation page-header__item">CONTACT</h1>
+    <h1 class="top-page-title page-header__item">CONTACT</h1>
 
-<nav class="main-navigation page-header__item">
-  <ul role="menubar" class="navigation-list">
-    <li role="presentation">
-      <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-    </li>
-    <li role="presentation">
-      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-    </li>
-    <li role="presentation">
-      <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-    </li>
-    <li role="presentation">
-      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-    </li>
-  </ul>
-</nav>
-</header>
+    <nav class="page-header__item">
+    <ul role="menubar" class="navigation-list">
+      <li role="presentation">
+        <a href="index.html" role="menuitem">Home</a>
+      </li>
+      <li role="presentation">
+        <a href="about.html" role="menuitem">About</a>
+      </li>
+      <li role="presentation">
+        <a href="projects.html" role="menuitem">Projects</a>
+      </li>
+      <li role="presentation">
+        <a href="contact.html" role="menuitem">Contact</a>
+      </li>
+    </ul>
+     </nav>
+      </header>
 
-  <div class="contact-me">
-  
+<div class="contact-body">
   <h2>You can reach me by:</h2>
-    
-  Tel: <a href="tel:8585252081">858-525-2081</a><br>
-  Skype: <a href="skype:cluelesslinh"> cluelesslinh</a> <br>
- 
-<a href="mailto:dennisbpham@gmail.com">dennisbpham@gmail.com</a>
+
+<ul>
+  <li>Telephone: <a href="tel:8585252081">858-525-2081</a></li>
+  <li>Email: <a href="mailto:dennisbpham@gmail.com">dennisbpham@gmail.com</a></li>
+</ul>
+
+<img class="contact-dragon" src="img/contact-dragon.gif" alt="animated-dragon"/>
 
   <form action="#blank" method="post" id="contact-form">
-  <label class="standard-label" for="contact-email">Your Email: </label>
+  <label class="standard-label" for="contact-email">Email </label>
   <input type="email" id="contact-email" required>
-
-  <label class="standard-label" for="phone-number">Your Telephone: </label>
+  <label class="standard-label" for="phone-number">Telephone </label>
   <input type="tel" id="phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-  <label class="standard-label" for="my-input">Your Message: </label>
-  <textarea id="my-input" required rows="4" style="width:300px" maxlength="240"></textarea>
-  <input type="submit" value="Send message">
+  <label class="standard-label" for="my-input">Message </label>
+  <textarea id="my-input" required rows="4" maxlength="240"></textarea>
+  <input class="contact-message-button" type="submit" value="Send">
 </form>
 
 </div>
 
 <footer class="page-footer">
-    <p>Find me on</p>
-      <div class="social-media">
-  <!-- Github logo -->
-      <img src="img/github_icon.svg" alt="github">
-  <!-- Twitter logo -->
-      <img src="img/twitter_icon.svg" alt="twitter">
-  <!-- LinkedIn logo -->
-      <img src="img/linkedin_icon.svg" alt="linkedin">
-    </div>
+  <p>Find me on</p>
+    <div class="social-media">
+<!-- Github logo -->
+    <a href="https://github.com/cluelesslinh" target="_blank"><img src="img/github_icon.svg" alt="github"></a>
+<!-- LinkedIn logo -->
+    <a href="https://www.linkedin.com/in/linhpham135117/" target="_blank"><img src="img/linkedin_icon.svg" alt="linkedin"></a>
+  </div>
 </footer>
 
-  <script src="js/tota11y.min.js"></script>
-
 </body>
-
 
 </html>
